@@ -160,6 +160,25 @@ Menu → MCP Manager → Add Server → Configure
 
 ## 🔨 Build from Source
 
+### Using Nix (Recommended for NixOS/Nix users)
+
+If you have [Nix](https://nixos.org/download.html) with flakes enabled:
+
+```bash
+# Clone and build in one step
+nix build github:getAsterisk/claudia
+
+# Or clone and develop locally
+git clone https://github.com/getAsterisk/claudia.git
+cd claudia
+nix develop  # Enter development environment
+just dev     # Start development server
+```
+
+See [NIX_SETUP.md](NIX_SETUP.md) for detailed Nix instructions.
+
+### Manual Build
+
 ### Prerequisites
 
 Before building Claudia from source, ensure you have the following installed:
